@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+* {
+  font-family: "Mukta", sans-serif;
+  font-size: 32px;
+}
+
+/* main page */
+
+body {
+  background-color: rgb(255, 202, 202);
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: #198754;
+  margin-bottom: 100px;
+  color: white;
+  box-shadow: 10px 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.homepagegtitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+.postboard {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: paleturquoise;
+  border: 1px solid black;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 32px;
+}
+
+/* heade insides */
+
+.logo {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -10px;
+  top: 20px;
+  left: 20px;
+}
+
+.bottom {
+  position: fixed;
+  text-align: center;
+  bottom: 10px;
+}
+
+.home {
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 30px;
+  padding: auto;
+  width: 10%;
+}
+
+.bottom-container {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.about {
+  margin: auto;
+  padding: auto;
+  width: 10%;
+  text-align: center;
+}
+
+/* posts */
+
+.post {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid black;
+  /*background-image: url("../img/corkboard.jpg") repeat 0 !important;*/
+  background-image: url("https://c1.wallpaperflare.com/preview/907/581/284/backdrop-background-blank-board.jpg");
+  flex-direction: row;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  align-content: stretch;
+  margin-bottom: 20px;
+}
+.post-info {
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  background-color: #ffff88;
+  border: 1px solid black;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-shadow: 10px 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+.tack {
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.mb-4 {
+  text-align: center;
+}
+
+.btn-success {
+  margin: 0 auto;
+  display: block;
+  justify-content: space-evenly;
+}
+
+/* new post */
+
+.btn-secondary {
+  background-color: #198754;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.apple {
+  width: 6em;
+  height: 5em;
+  background-color: #ff4355;
+  box-shadow: inset 0.2em -0.2em #cc1022;
+  border-radius: 2em 2em 3em 3em;
+  position: fixed;
+  bottom: 0.5em;
+  right: 0.3em;
+}
+
+.apple:before {
+  top: -0.2em;
+  left: 1.8em;
+  content: "";
+  width: 4.1em;
+  height: 2.75em;
+  background-color: inherit;
+  border-radius: 3em 3em 0 0;
+  position: absolute;
+  box-shadow: -1.5em 0 0 #ff4355, inset 0.2em 0.2em #ff4355;
+}
+
+.apple:after {
+  content: "";
+  width: 0.2em;
+  height: 1em;
+  background-color: brown;
+  position: absolute;
+  z-index: 2;
+  top: -0.5em;
+  left: 3em;
+}
+
+.post-title {
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.post-discord {
+  padding: 10px 0;
+}
+
+.post-discord,
+.post-createdAt,
+.post-id {
+  font-size: 22px;
+}
+
+.comments-feed {
+  padding: 20px 20px;
+}
+
+.comments-feed button {
+  background-color: lightgreen;
+  margin: 20px 0;
+  border: 1px solid black;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+.comments {
+  padding: 20px 20px;
+}
+
+/* about */
+
+.authors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 7vh;
+  opacity: 1;
+}
+
+.socials > a,
+.socials > i {
+  text-decoration: none !important;
+  color: black;
+  font-size: 30px;
+  padding: 0 10px;
+}
+
+.socials i:hover {
+  filter: drop-shadow(0 0 20px black);
+}

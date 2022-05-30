@@ -1,0 +1,10 @@
+<% for(var i = 0; i < posts.length; i++) { %>
+<div class="post-info">
+  <a href="/posts/view?id=<%= posts[i]._id%>">
+    <img class="tack" src="https://i.imgur.com/13WRFy6.png" alt="tack" />
+    <span class="post-title"><%= posts[i].title %></span>
+    <div class="post-discord"><%= posts[i].discordTag %></div>
+    <div class="post-createdAt"><%= posts[i].createdAt.split('T')[0] %></div>
+  </a>
+</div>
+<% } %>

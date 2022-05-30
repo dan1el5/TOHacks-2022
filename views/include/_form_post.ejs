@@ -1,0 +1,22 @@
+<form action="/api/posts" method="POST" id="new_post">
+  <div class="new_post">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input required type="text" value="" name="title" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" value="" name="description" class="form-control" />
+    </div>
+    <div class="form-group">
+      <label for="discordTag">Discord Tag</label>
+      <input type="text" value="" name="discordTag" class="form-control" />
+    </div>
+    <div class="form-group">
+      <input hidden type="text" value="" name="comments" class="form-control" />
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-secondary">Save</button>
+    </div>
+  </div>
+</form>

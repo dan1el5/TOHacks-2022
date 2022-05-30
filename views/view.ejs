@@ -1,0 +1,26 @@
+<%- include('include/_header') %>
+
+<div class="post-info">
+  <span class="post-title"><%= post.title %></span>
+  <div class="post-discord"><%= post.discordTag %></div>
+  <div class="post-createdAt"><%= post.createdAt.split('T')[0] %></div>
+</div>
+
+<form method="POST" id="view" class="comments-feed">
+  <div class="form-group">
+    <label for="comments">Comments</label>
+    <input type="hidden" name="id" value="<%= post._id %>" />
+    <input
+      type="text"
+      value="<%= post.comments %>"
+      name="comments"
+      class="form-control"
+    />
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn text-dark update">Save</button>
+  </div>
+</form>
+<div class="comments"><%= post.comments %></div>
+
+<%- include('include/_footer') %>
